@@ -20,7 +20,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         libglib2.0-dev \
         git \
         fakeroot \
-        curl
+        curl \
+        python
 
 RUN apt-get autoremove -y; sudo apt-get clean; rm -rf /var/lib/apt/lists/*; rm /var/log/alternatives.log /var/log/apt/*; rm /var/log/* -r;
 
