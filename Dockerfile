@@ -21,7 +21,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         git \
         fakeroot \
         curl \
-        python
+        python \
+        ssh
 
 RUN apt-get autoremove -y; sudo apt-get clean; rm -rf /var/lib/apt/lists/*; rm /var/log/alternatives.log /var/log/apt/*; rm /var/log/* -r;
 
